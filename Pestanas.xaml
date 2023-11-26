@@ -6,7 +6,7 @@
     <ContentPage Title="Realizar busqueda" BackgroundColor="#4AF7BD">
         <ScrollView>
             <VerticalStackLayout Spacing="25" Padding="20" >
-                <Label Text="TUKI HOTEL" HorizontalOptions="Center" FontSize="25" FontAttributes="Bold"></Label TextColor="Black">
+                <Label Text="TUKI HOTEL" HorizontalOptions="Center" FontSize="25" FontAttributes="Bold" TextColor="Black"></Label >
                 <Label Text="Ingrese Numero de huespedes" TextColor="Black"></Label>
                 <Entry BackgroundColor="#4AF7BD" Opacity="25" Placeholder="Numero de huespedes" >
 
