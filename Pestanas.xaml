@@ -64,5 +64,23 @@ Date="11/26/2022" TextColor="Black">
         </ScrollView>
 
     </ContentPage>
+    
+    <ContentPage Title="Perfil" BackgroundColor="#4AF7BD">
+        <ScrollView>
+            <VerticalStackLayout Spacing="25">
+                <Image Source="dotnet_bot.svg" HorizontalOptions="Center" HeightRequest="200"></Image>
+
+                <Label Text="Juan Perez" HorizontalOptions="Center" TextColor="Black"></Label>
+                <Label Text="Cuenta" TextColor="Black"></Label>
+                <Button Text="Gestionar detalles de la cuenta" BackgroundColor="#ACDCFA" TextColor="Black"></Button>
+                <Button Text="Metodos de pago" BackgroundColor="#ACDCFA" TextColor="Black"></Button>
+                <Label Text="Ayuda y soporte" TextColor="Black"></Label>
+                <Button Text="Contactar con soporte" BackgroundColor="#ACDCFA" TextColor="Black"></Button>
+                <Label Text="Aplicacion" TextColor="Black"></Label>
+                <Button Text="Configuracion" BackgroundColor="#ACDCFA" TextColor="Black"></Button>
+            </VerticalStackLayout>
+        </ScrollView>
+
+    </ContentPage>
 
 </TabbedPage>
