@@ -6,29 +6,29 @@
     <ContentPage Title="Realizar busqueda" BackgroundColor="#4AF7BD">
         <ScrollView>
             <VerticalStackLayout Spacing="25" Padding="20" >
-                <Label Text="TUKI HOTEL" HorizontalOptions="Center" FontSize="25" FontAttributes="Bold"></Label>
-                <Label Text="Ingrese Numero de huespedes"></Label>
+                <Label Text="TUKI HOTEL" HorizontalOptions="Center" FontSize="25" FontAttributes="Bold"></Label TextColor="Black">
+                <Label Text="Ingrese Numero de huespedes" TextColor="Black"></Label>
                 <Entry BackgroundColor="#4AF7BD" Opacity="25" Placeholder="Numero de huespedes" >
 
                 </Entry>
 
                 <HorizontalStackLayout Spacing="50">
-                    <Label Text="Fecha de entrada"></Label>
-                    <Label Text="Fecha de salida"></Label>
+                    <Label Text="Fecha de entrada" TextColor="Black"></Label>
+                    <Label Text="Fecha de salida" TextColor="Black"></Label>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout Spacing="90">
                     <DatePicker  MinimumDate="01/01/2023"
             MaximumDate="12/31/2023"
-            Date="11/26/2022">
+            Date="11/26/2022" TextColor="Black">
                     </DatePicker>
 
                     <DatePicker  MinimumDate="01/01/2023"
 MaximumDate="12/31/2023"
-Date="11/26/2022">
+Date="11/26/2022" TextColor="Black">
                     </DatePicker>
 
                 </HorizontalStackLayout>
-                <Button Text="Realizar busqueda"
+                <Button Text="Confirmar datos"
                     HorizontalOptions="Center"
                     BackgroundColor="#ACDCFA"
                     TextColor="Black">
@@ -38,5 +38,31 @@ Date="11/26/2022">
             </VerticalStackLayout>
         </ScrollView>
     </ContentPage>
-    
+
+    <ContentPage Title="Gestionar Reservas" BackgroundColor="#4AF7BD">
+        <ScrollView>
+            <VerticalStackLayout Spacing="25">
+                <Label Text="Seleccionar Reservas" TextColor="Black"></Label>
+
+                <ListView x:Name="habitacionesListView" SeparatorColor="Black">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Margin="0,0,0,25">
+                                    <Label Text="{Binding Numero}" TextColor="Black"/>
+                                    <Label Text="{Binding Tipo}" TextColor="Black" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+
+                <Button Text="Gestionar" BackgroundColor="#ACDCFA" HorizontalOptions="Center" TextColor="Black">
+                </Button>
+            </VerticalStackLayout>
+        </ScrollView>
+
+    </ContentPage>
+
 </TabbedPage>
